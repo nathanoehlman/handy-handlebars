@@ -1,0 +1,15 @@
+{
+  "name": "handy-handlebars",
+  "version": "0.0.1",
+  "description": "Helpful handlebars helpers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Nathan Oehlman",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "~2.1.0"
+  }
+}
