@@ -2,7 +2,9 @@ var moment = require('moment');
 
 module.exports = function(hbs) {
 
-	if (!hbs) return;	
+	if (!hbs) return;
+
+	var handlebars = hbs.handlebars;
 
     hbs.registerHelper('average', function(total, count) {
         return Math.round(total / count * 100) / 100;
@@ -15,7 +17,7 @@ module.exports = function(hbs) {
     hbs.registerHelper('centsToMoney', function(cents) {
         if (!cents) return '0.00';
         return (cents / 100).toFixed(2)
-    });    
+    });
 
     hbs.registerHelper("math", function(lvalue, operator, rvalue, options) {
         if (arguments.length < 4) {
