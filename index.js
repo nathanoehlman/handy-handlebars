@@ -77,7 +77,7 @@ module.exports = function(hbs) {
     });
 
     hbs.registerHelper('if_eq', function(context, options) {
-        if (context == options.hash.compare)
+        if (context == options.hash.compare || (context && options.hash.compare && context.toString() == options.hash.compare.toString()))
             return options.fn(this);
         return options.inverse(this);
     });

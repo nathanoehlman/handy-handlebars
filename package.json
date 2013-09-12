@@ -1,6 +1,6 @@
 {
   "name": "handy-handlebars",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Helpful handlebars helpers",
   "main": "index.js",
   "scripts": {
